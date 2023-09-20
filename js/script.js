@@ -5,6 +5,7 @@
 // 5. metti a confronto le due liste per verificare quanti numeri siano uguali
 // 6. mostra il risultato
   let listRandomNumber = [];
+  let message;
 
   for (let i = 0; i < 5; i++) {
     randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
@@ -25,5 +26,8 @@
     let correctNumber = listSendNumber.filter(number => listRandomNumber.includes(number));
     console.log(correctNumber);
 
+    message = `Hai indovinato ${correctNumber.length} numeri : ${correctNumber}`
 
+    document.getElementById('output').innerHTML = message;
+    
   }, 5000);
