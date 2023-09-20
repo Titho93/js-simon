@@ -25,4 +25,7 @@
     }
     console.log(listSendNumber);
 
+    let correctNumber = listSendNumber.filter(listRandomNumber);
+    console.log(correctNumber);
+
   }, 5000);
