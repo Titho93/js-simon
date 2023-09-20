@@ -9,10 +9,13 @@
 startGame ();
 
 function startGame () {
-  const randomNumber = [];
+  let listRandomNumber = [];
 
   for (let i = 0; i < 5; i++) {
-    const randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
-    console.log(randomNumber)
+    randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    listRandomNumber.push(randomNumber)
   }
+  console.log(randomNumber);
+    
+  alert(` Ecco i numeri da memorizzare  ${listRandomNumber} `);
 }
