@@ -6,3 +6,13 @@
 // 6. metti a confronto le due liste per verificare quanti numeri siano uguali
 // 7. mostra il risultato
 
+startGame ();
+
+function startGame () {
+  const randomNumber = [];
+
+  for (let i = 0; i < 5; i++) {
+    const randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
+    console.log(randomNumber)
+  }
+}
