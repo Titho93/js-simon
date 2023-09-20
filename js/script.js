@@ -4,19 +4,16 @@
 // 4. creare una lista vuota dove l'utente tramite un prompt inserisce 5 numeri
 // 5. metti a confronto le due liste per verificare quanti numeri siano uguali
 // 6. mostra il risultato
-
-
   let listRandomNumber = [];
 
   for (let i = 0; i < 5; i++) {
     randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
     listRandomNumber.push(randomNumber);
   }
-    
+  
   alert(` Ecco i numeri da memorizzare  ${listRandomNumber} `);
 
   setTimeout(function() {
-    console.log('va')
     let listSendNumber = [];
 
     for (let i = 0; i < 5; i++) {
@@ -25,7 +22,8 @@
     }
     console.log(listSendNumber);
 
-    let correctNumber = listSendNumber.filter(listRandomNumber);
+    let correctNumber = listSendNumber.filter(number => listRandomNumber.includes(number));
     console.log(correctNumber);
+
 
   }, 5000);
