@@ -12,11 +12,11 @@
     randomNumber = Math.floor(Math.random() * (100 - 1 + 1)) + 1;
     listRandomNumber.push(randomNumber);
   }
-  console.log(randomNumber);
     
   alert(` Ecco i numeri da memorizzare  ${listRandomNumber} `);
 
-  setTimeout(function () {
+  setTimeout(function() {
+    console.log('va')
     let listSendNumber = [];
 
     for (let i = 0; i < 5; i++) {
